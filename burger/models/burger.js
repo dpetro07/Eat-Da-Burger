@@ -1,21 +1,15 @@
 var orm = require('../config/orm.js');
 
-var addOrDevourBurger = {
-  addBurger: function(nameInput, cb)
-}
-
 
 var addOrDevourBurger = {
   addBurger: function(nameInput, cb){
-    orm.newBurger("addOrDevourBurger", nameInput, cb);
+    orm.newBurger("burgers", nameInput, cb);
   },
   devourBurger: function(inputId, cb){
-    orm.devour("addOrDevourBurger", inputId, cb);
+    orm.devoured("burgers", inputId, cb);
   },
-  findAll: function(cb) {
-    orm.allBurgers("addOrDevourBurger", function(res){
-      cb(res);
-    });
+  findAllBurgers: function(cb) {
+    orm.allBurgers(cb);
   }
 };
 
