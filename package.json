@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/dpetro07/Eat-Da-Burger#readme",
   "dependencies": {
-    "body-parser": "^1.14.2",
+    "body-parser": "^1.15.0",
+    "connect": "^3.4.1",
     "express": "^4.13.4",
     "express-handlebars": "^3.0.0",
     "method-override": "^2.3.5",
