@@ -20,11 +20,11 @@ router.post('/create', function(req, res) {
 });
 
 
-router.post('/update', function(req,res){
-  burger.devourBurger(req.body.id, function(result){
+router.post('/devour/:burger', function(req,res){
+  burger.devourBurger(req.params.burger, function(result){
     res.redirect('/');
   });
 });
 
 
-module.exports = router; 
+module.exports = router;
