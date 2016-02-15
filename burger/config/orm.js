@@ -2,7 +2,7 @@ var connection = require('./connection.js');
 
 
 var orm = {
-  getBurgers: function(tableInput, nameInput, cb) { 
+  allBurgers: function(tableInput, nameInput, cb) { 
     var s = "INSERT INTO " + tableInput + " (burger_name) VALUES (?)";
     connection.query(s, [nameInput], function(err, result) {
       if (err) throw err;
